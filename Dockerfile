@@ -9,5 +9,5 @@ COPY Gruntfile.js Gruntfile.js
 COPY package*.json ./
 
 RUN npm install
-RUN npm run build
+RUN npm run build --force
 ENTRYPOINT [ "node", "server.js" ]
